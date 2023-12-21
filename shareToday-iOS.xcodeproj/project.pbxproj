@@ -78,8 +78,16 @@
 		1CDD02B52B342E0100502C04 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				1CDD02B72B342E2700502C04 /* Auth */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1CDD02B72B342E2700502C04 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		1CEA336F2B335D440080EEEF = {
