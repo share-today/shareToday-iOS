@@ -4,11 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SpoqaHanSansNeo-Bold.ttf</string>
-		<string>SpoqaHanSansNeo-Light.ttf</string>
-		<string>SpoqaHanSansNeo-Medium.ttf</string>
-		<string>SpoqaHanSansNeo-Regular.ttf</string>
-		<string>SpoqaHanSansNeo-Thin.ttf</string>
+		<string>Cafe24SsurroundAir.ttf</string>
+		<string>Cafe24Ssurround.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

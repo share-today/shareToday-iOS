@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CDD02A32B3423ED00502C04 /* SpoqaHanSansNeo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD029E2B3423EC00502C04 /* SpoqaHanSansNeo-Medium.ttf */; };
-		1CDD02A42B3423ED00502C04 /* SpoqaHanSansNeo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD029F2B3423EC00502C04 /* SpoqaHanSansNeo-Thin.ttf */; };
-		1CDD02A52B3423ED00502C04 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02A02B3423EC00502C04 /* SpoqaHanSansNeo-Light.ttf */; };
-		1CDD02A62B3423ED00502C04 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02A12B3423ED00502C04 /* SpoqaHanSansNeo-Bold.ttf */; };
-		1CDD02A72B3423ED00502C04 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02A22B3423ED00502C04 /* SpoqaHanSansNeo-Regular.ttf */; };
+		1CDD02AD2B3429A700502C04 /* Cafe24Ssurround.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */; };
+		1CDD02AE2B3429A700502C04 /* Cafe24SsurroundAir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */; };
 		1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337B2B335D440080EEEF /* AppDelegate.swift */; };
 		1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337D2B335D440080EEEF /* SceneDelegate.swift */; };
 		1CEA33802B335D440080EEEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337F2B335D440080EEEF /* ViewController.swift */; };
@@ -21,11 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1CDD029E2B3423EC00502C04 /* SpoqaHanSansNeo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.ttf"; sourceTree = "<group>"; };
-		1CDD029F2B3423EC00502C04 /* SpoqaHanSansNeo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.ttf"; sourceTree = "<group>"; };
-		1CDD02A02B3423EC00502C04 /* SpoqaHanSansNeo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.ttf"; sourceTree = "<group>"; };
-		1CDD02A12B3423ED00502C04 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
-		1CDD02A22B3423ED00502C04 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
+		1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24Ssurround.ttf; sourceTree = "<group>"; };
+		1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24SsurroundAir.ttf; sourceTree = "<group>"; };
 		1CEA33782B335D440080EEEF /* shareToday-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shareToday-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEA337B2B335D440080EEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CEA337D2B335D440080EEEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,11 +53,8 @@
 		1CDD029D2B3423C400502C04 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				1CDD02A12B3423ED00502C04 /* SpoqaHanSansNeo-Bold.ttf */,
-				1CDD02A02B3423EC00502C04 /* SpoqaHanSansNeo-Light.ttf */,
-				1CDD029E2B3423EC00502C04 /* SpoqaHanSansNeo-Medium.ttf */,
-				1CDD02A22B3423ED00502C04 /* SpoqaHanSansNeo-Regular.ttf */,
-				1CDD029F2B3423EC00502C04 /* SpoqaHanSansNeo-Thin.ttf */,
+				1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */,
+				1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -164,14 +155,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CDD02A72B3423ED00502C04 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
 				1CEA33882B335D450080EEEF /* LaunchScreen.storyboard in Resources */,
-				1CDD02A42B3423ED00502C04 /* SpoqaHanSansNeo-Thin.ttf in Resources */,
+				1CDD02AD2B3429A700502C04 /* Cafe24Ssurround.ttf in Resources */,
+				1CDD02AE2B3429A700502C04 /* Cafe24SsurroundAir.ttf in Resources */,
 				1CEA33852B335D450080EEEF /* Assets.xcassets in Resources */,
-				1CDD02A32B3423ED00502C04 /* SpoqaHanSansNeo-Medium.ttf in Resources */,
-				1CDD02A52B3423ED00502C04 /* SpoqaHanSansNeo-Light.ttf in Resources */,
 				1CEA33832B335D440080EEEF /* Main.storyboard in Resources */,
-				1CDD02A62B3423ED00502C04 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
