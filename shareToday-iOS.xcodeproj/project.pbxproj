@@ -22,6 +22,7 @@
 		1CDD02D92B34743A00502C04 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDD02D82B34743A00502C04 /* Alamofire */; };
 		1CDD02DD2B3474A900502C04 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02DC2B3474A900502C04 /* API.swift */; };
 		1CDD02DF2B3475AA00502C04 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02DE2B3475AA00502C04 /* APIRouter.swift */; };
+		1CDD02E22B3477AA00502C04 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02E12B3477AA00502C04 /* Encodable.swift */; };
 		1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337B2B335D440080EEEF /* AppDelegate.swift */; };
 		1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337D2B335D440080EEEF /* SceneDelegate.swift */; };
 		1CEA33852B335D450080EEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEA33842B335D450080EEEF /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		1CDD02D22B34723500502C04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1CDD02DC2B3474A900502C04 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		1CDD02DE2B3475AA00502C04 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		1CDD02E12B3477AA00502C04 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		1CEA33782B335D440080EEEF /* shareToday-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shareToday-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEA337B2B335D440080EEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CEA337D2B335D440080EEEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		1CDD02E02B34779A00502C04 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1CDD02E12B3477AA00502C04 /* Encodable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		1CEA336F2B335D440080EEEF = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 		1CEA337A2B335D440080EEEF /* shareToday-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1CDD02E02B34779A00502C04 /* Extension */,
 				1CDD02B52B342E0100502C04 /* Presentation */,
 				1CDD02D42B34733400502C04 /* Network */,
 				1CDD029C2B34238300502C04 /* DesignSystem */,
@@ -250,6 +261,7 @@
 			files = (
 				1CDD02DD2B3474A900502C04 /* API.swift in Sources */,
 				1CDD02DF2B3475AA00502C04 /* APIRouter.swift in Sources */,
+				1CDD02E22B3477AA00502C04 /* Encodable.swift in Sources */,
 				1CDD02CF2B34710F00502C04 /* BackgroundView.swift in Sources */,
 				1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */,
 				1CDD02B42B342C7D00502C04 /* TextManager.swift in Sources */,
