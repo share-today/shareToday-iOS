@@ -20,6 +20,7 @@
 		1CDD02D12B34719E00502C04 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02D02B34719E00502C04 /* LoginView.swift */; };
 		1CDD02D32B34723500502C04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02D22B34723500502C04 /* LoginViewController.swift */; };
 		1CDD02D92B34743A00502C04 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDD02D82B34743A00502C04 /* Alamofire */; };
+		1CDD02DD2B3474A900502C04 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02DC2B3474A900502C04 /* API.swift */; };
 		1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337B2B335D440080EEEF /* AppDelegate.swift */; };
 		1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337D2B335D440080EEEF /* SceneDelegate.swift */; };
 		1CEA33852B335D450080EEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEA33842B335D450080EEEF /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		1CDD02CE2B34710F00502C04 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		1CDD02D02B34719E00502C04 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1CDD02D22B34723500502C04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1CDD02DC2B3474A900502C04 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		1CEA33782B335D440080EEEF /* shareToday-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shareToday-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEA337B2B335D440080EEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CEA337D2B335D440080EEEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		1CDD02D42B34733400502C04 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1CDD02DC2B3474A900502C04 /* API.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDD02DD2B3474A900502C04 /* API.swift in Sources */,
 				1CDD02CF2B34710F00502C04 /* BackgroundView.swift in Sources */,
 				1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */,
 				1CDD02B42B342C7D00502C04 /* TextManager.swift in Sources */,
