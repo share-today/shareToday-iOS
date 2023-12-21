@@ -10,6 +10,17 @@ import SnapKit
 
 final class LoginView: BackgroundView {
     
+    // MARK: - Dimension
+    
+    enum Dimension {
+        static let titleImageLayout: CGFloat = 250
+        static let logoImageTop: CGFloat = 55
+        static let logoImageLeading: CGFloat = 175
+        static let buttonBottomMargin: CGFloat = 80
+        static let buttonLRMargin: CGFloat = 24
+        static let buttonHeight: CGFloat = 220
+    }
+    
     // MARK: - UI
     
     private let titleImage: UIImageView = {
@@ -74,4 +85,41 @@ final class LoginView: BackgroundView {
         stview.alignment = .fill
         return stview
     }()
+    
+    // MARK: - Initialize
+
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setConstraints()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Configure
+    
+    private func setConstraints() {
+        self.addSubview(self.titleImage)
+        self.addSubview(self.logoImage)
+        self.addSubview(self.buttonStackView)
+        
+        self.titleImage.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.centerY.equalTo(Dimension.titleImageLayout)
+        }
+        
+        self.logoImage.snp.makeConstraints {
+            $0.top.equalTo(titleImage.snp.top).offset(Dimension.logoImageTop)
+            $0.leading.equalTo(titleImage.snp.leading).offset(Dimension.logoImageLeading)
+        }
+        
+        self.buttonStackView.snp.makeConstraints {
+            $0.bottom.equalToSuperview().offset(-Dimension.buttonBottomMargin)
+            $0.leading.trailing.equalToSuperview().inset(Dimension.buttonLRMargin)
+            $0.height.equalTo(Dimension.buttonHeight)
+        }
+    }
 }
