@@ -18,6 +18,7 @@
 		1CDD02CA2B34641500502C04 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDD02C92B34641500502C04 /* SnapKit-Dynamic */; };
 		1CDD02CF2B34710F00502C04 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02CE2B34710F00502C04 /* BackgroundView.swift */; };
 		1CDD02D12B34719E00502C04 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02D02B34719E00502C04 /* LoginView.swift */; };
+		1CDD02D32B34723500502C04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02D22B34723500502C04 /* LoginViewController.swift */; };
 		1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337B2B335D440080EEEF /* AppDelegate.swift */; };
 		1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337D2B335D440080EEEF /* SceneDelegate.swift */; };
 		1CEA33802B335D440080EEEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337F2B335D440080EEEF /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 		1CDD02BF2B344D7200502C04 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		1CDD02CE2B34710F00502C04 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		1CDD02D02B34719E00502C04 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1CDD02D22B34723500502C04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1CEA33782B335D440080EEEF /* shareToday-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shareToday-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEA337B2B335D440080EEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CEA337D2B335D440080EEEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		1CDD02B72B342E2700502C04 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				1CDD02D22B34723500502C04 /* LoginViewController.swift */,
 				1CDD02B82B342E3900502C04 /* Views */,
 			);
 			path = Auth;
@@ -244,6 +247,7 @@
 				1CDD02C02B344D7200502C04 /* Icon.swift in Sources */,
 				1CDD02D12B34719E00502C04 /* LoginView.swift in Sources */,
 				1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */,
+				1CDD02D32B34723500502C04 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
