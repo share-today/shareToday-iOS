@@ -11,6 +11,7 @@
 		1CDD02AE2B3429A700502C04 /* Cafe24SsurroundAir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */; };
 		1CDD02B02B342A4100502C04 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02AF2B342A4100502C04 /* Typography.swift */; };
 		1CDD02B22B342BBC00502C04 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02B12B342BBC00502C04 /* BackgroundColor.swift */; };
+		1CDD02B42B342C7D00502C04 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02B32B342C7D00502C04 /* TextManager.swift */; };
 		1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337B2B335D440080EEEF /* AppDelegate.swift */; };
 		1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337D2B335D440080EEEF /* SceneDelegate.swift */; };
 		1CEA33802B335D440080EEEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337F2B335D440080EEEF /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24SsurroundAir.ttf; sourceTree = "<group>"; };
 		1CDD02AF2B342A4100502C04 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		1CDD02B12B342BBC00502C04 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		1CDD02B32B342C7D00502C04 /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 		1CEA33782B335D440080EEEF /* shareToday-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shareToday-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEA337B2B335D440080EEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CEA337D2B335D440080EEEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				1CDD02AF2B342A4100502C04 /* Typography.swift */,
 				1CDD02B12B342BBC00502C04 /* BackgroundColor.swift */,
+				1CDD02B32B342C7D00502C04 /* TextManager.swift */,
 			);
 			path = Values;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				1CEA33802B335D440080EEEF /* ViewController.swift in Sources */,
 				1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */,
+				1CDD02B42B342C7D00502C04 /* TextManager.swift in Sources */,
 				1CDD02B22B342BBC00502C04 /* BackgroundColor.swift in Sources */,
 				1CDD02B02B342A4100502C04 /* Typography.swift in Sources */,
 				1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */,
