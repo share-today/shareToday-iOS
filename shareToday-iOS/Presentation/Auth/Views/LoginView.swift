@@ -87,7 +87,6 @@ final class LoginView: BackgroundView {
     }()
     
     // MARK: - Initialize
-
     
     override init(frame: CGRect) {
         super.init(frame: frame)
