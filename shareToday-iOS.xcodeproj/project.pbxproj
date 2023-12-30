@@ -69,6 +69,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C5E836A2B40644600CD2168 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		1CDD029C2B34238300502C04 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,10 +194,11 @@
 			isa = PBXGroup;
 			children = (
 				1CDD02B52B342E0100502C04 /* Presentation */,
-				1CDD02D42B34733400502C04 /* Network */,
 				1CDD02E72B36CE4700502C04 /* Repository */,
-				1CDD02E02B34779A00502C04 /* Extension */,
+				1C5E836A2B40644600CD2168 /* Domain */,
+				1CDD02D42B34733400502C04 /* Network */,
 				1CDD029C2B34238300502C04 /* DesignSystem */,
+				1CDD02E02B34779A00502C04 /* Extension */,
 				1CEA337B2B335D440080EEEF /* AppDelegate.swift */,
 				1CEA337D2B335D440080EEEF /* SceneDelegate.swift */,
 				1CEA33842B335D450080EEEF /* Assets.xcassets */,
