@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5E836D2B40659C00CD2168 /* AuthEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E836C2B40659C00CD2168 /* AuthEntity.swift */; };
 		1CDD02AD2B3429A700502C04 /* Cafe24Ssurround.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */; };
 		1CDD02AE2B3429A700502C04 /* Cafe24SsurroundAir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */; };
 		1CDD02B02B342A4100502C04 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02AF2B342A4100502C04 /* Typography.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C5E836C2B40659C00CD2168 /* AuthEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntity.swift; sourceTree = "<group>"; };
 		1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24Ssurround.ttf; sourceTree = "<group>"; };
 		1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24SsurroundAir.ttf; sourceTree = "<group>"; };
 		1CDD02AF2B342A4100502C04 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		1C5E836B2B40654C00CD2168 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				1C5E836C2B40659C00CD2168 /* AuthEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				1CDD02BE2B34491000502C04 /* Colors.swift in Sources */,
 				1CDD02B22B342BBC00502C04 /* BackgroundColor.swift in Sources */,
 				1CDD02B02B342A4100502C04 /* Typography.swift in Sources */,
+				1C5E836D2B40659C00CD2168 /* AuthEntity.swift in Sources */,
 				1CDD02C02B344D7200502C04 /* Icon.swift in Sources */,
 				1CDD02D12B34719E00502C04 /* LoginView.swift in Sources */,
 				1CDD02EA2B36CE9600502C04 /* AuthDTO.swift in Sources */,
