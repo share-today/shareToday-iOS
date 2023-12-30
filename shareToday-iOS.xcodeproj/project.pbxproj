@@ -72,8 +72,16 @@
 		1C5E836A2B40644600CD2168 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				1C5E836B2B40654C00CD2168 /* Entity */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		1C5E836B2B40654C00CD2168 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		1CDD029C2B34238300502C04 /* DesignSystem */ = {
