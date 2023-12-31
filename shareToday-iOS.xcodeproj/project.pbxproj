@@ -87,6 +87,13 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		1C5E836E2B41B50E00CD2168 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		1CDD029C2B34238300502C04 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +179,7 @@
 		1CDD02E72B36CE4700502C04 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				1C5E836E2B41B50E00CD2168 /* Repository */,
 				1CDD02E82B36CE8300502C04 /* DTO */,
 			);
 			path = Repository;
