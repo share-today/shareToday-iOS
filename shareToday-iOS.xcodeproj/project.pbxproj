@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C5E836D2B40659C00CD2168 /* AuthEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E836C2B40659C00CD2168 /* AuthEntity.swift */; };
+		1C5E83702B41B55200CD2168 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E836F2B41B55200CD2168 /* AuthRepository.swift */; };
 		1CDD02AD2B3429A700502C04 /* Cafe24Ssurround.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */; };
 		1CDD02AE2B3429A700502C04 /* Cafe24SsurroundAir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */; };
 		1CDD02B02B342A4100502C04 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02AF2B342A4100502C04 /* Typography.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		1C5E836C2B40659C00CD2168 /* AuthEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntity.swift; sourceTree = "<group>"; };
+		1C5E836F2B41B55200CD2168 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24Ssurround.ttf; sourceTree = "<group>"; };
 		1CDD02AC2B3429A700502C04 /* Cafe24SsurroundAir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24SsurroundAir.ttf; sourceTree = "<group>"; };
 		1CDD02AF2B342A4100502C04 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
@@ -87,11 +89,12 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		1C5E836E2B41B50E00CD2168 /* Repository */ = {
+		1C5E836E2B41B50E00CD2168 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				1C5E836F2B41B55200CD2168 /* AuthRepository.swift */,
 			);
-			path = Repository;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		1CDD029C2B34238300502C04 /* DesignSystem */ = {
@@ -179,7 +182,7 @@
 		1CDD02E72B36CE4700502C04 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				1C5E836E2B41B50E00CD2168 /* Repository */,
+				1C5E836E2B41B50E00CD2168 /* Auth */,
 				1CDD02E82B36CE8300502C04 /* DTO */,
 			);
 			path = Repository;
@@ -321,6 +324,7 @@
 				1C5E836D2B40659C00CD2168 /* AuthEntity.swift in Sources */,
 				1CDD02C02B344D7200502C04 /* Icon.swift in Sources */,
 				1CDD02D12B34719E00502C04 /* LoginView.swift in Sources */,
+				1C5E83702B41B55200CD2168 /* AuthRepository.swift in Sources */,
 				1CDD02EA2B36CE9600502C04 /* AuthDTO.swift in Sources */,
 				1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */,
 				1CDD02D32B34723500502C04 /* LoginViewController.swift in Sources */,
