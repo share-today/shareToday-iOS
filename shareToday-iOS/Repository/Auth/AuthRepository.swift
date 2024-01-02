@@ -48,7 +48,10 @@ extension AuthDTO {
     var toDomain: AuthEntity.Response {
         return AuthEntity.Response(
             result: self.result,
-            data: self.data
+            data: AuthEntity.Response.Auth(
+                userId: self.data.userId,
+                jwt: self.data.jwt
+            )
         )
     }
 }
