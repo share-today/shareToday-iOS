@@ -40,17 +40,25 @@ final class MainViewController: UIViewController {
     }
     
     private func setNavigationBar() {
-        let image = Icon.arrow_left.image?.withTintColor(Colors.black, renderingMode: .alwaysOriginal)
-        
-        navigationController?.navigationBar.barTintColor = Colors.white
+        let leftImage = Icon.bell.image?.withRenderingMode(.alwaysOriginal)
+        let rightImage = Icon.menu.image?.withRenderingMode(.alwaysOriginal)
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(
-            image: image, style: .done,
-            target: self, action: #selector(showPrevious))
+            image: leftImage, style: .done,
+            target: self, action: #selector(showAlertView))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: rightImage, style: .done,
+            target: self, action: #selector(showSideMenu))
     }
     
     @objc
-    private func showPrevious() {
-        self.navigationController?.popViewController(animated: true)
+    private func showAlertView() {
+        
+    }
+    
+    @objc
+    private func showSideMenu() {
+        
     }
 }
