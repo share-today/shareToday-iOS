@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C3C1A602B894A7C00EB5264 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1C3C1A5F2B894A7C00EB5264 /* RxCocoa */; };
 		1C3C1A632B894C2F00EB5264 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C1A622B894C2F00EB5264 /* TextView.swift */; };
+		1C3C1A652B89514700EB5264 /* MyTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C1A642B89514700EB5264 /* MyTodayView.swift */; };
 		1C49CA9D2B89310900556262 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49CA9C2B89310900556262 /* MainView.swift */; };
 		1C49CAA02B89409700556262 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49CA9F2B89409700556262 /* MainViewController.swift */; };
 		1C5E836D2B40659C00CD2168 /* AuthEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E836C2B40659C00CD2168 /* AuthEntity.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1C3C1A622B894C2F00EB5264 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		1C3C1A642B89514700EB5264 /* MyTodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodayView.swift; sourceTree = "<group>"; };
 		1C49CA9C2B89310900556262 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1C49CA9F2B89409700556262 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1C5E836C2B40659C00CD2168 /* AuthEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntity.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		1C49CAA22B89429F00556262 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C3C1A642B89514700EB5264 /* MyTodayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				1C5E836D2B40659C00CD2168 /* AuthEntity.swift in Sources */,
 				1CDD02C02B344D7200502C04 /* Icon.swift in Sources */,
 				1CDD02D12B34719E00502C04 /* LoginView.swift in Sources */,
+				1C3C1A652B89514700EB5264 /* MyTodayView.swift in Sources */,
 				1C5E83702B41B55200CD2168 /* AuthRepository.swift in Sources */,
 				1CDD02EA2B36CE9600502C04 /* AuthDTO.swift in Sources */,
 				1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */,

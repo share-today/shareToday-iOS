@@ -21,4 +21,11 @@ struct TextManager {
     static let kakao = "  카카오톡으로 로그인"
     static let apple = "  Apple로 로그인"
     static let google = "  Google로 로그인"
+    
+    // MARK: - MyToday
+    
+    static let todayDate = "yy년 MM월 dd일"
+    static let myToday_placeholder = "누군가에게 털어놓고 싶은 일이\n있었나요?"
+    static let myToday_contentCount = "0/100"
+    static let myToday_send = "보내기"
 }
