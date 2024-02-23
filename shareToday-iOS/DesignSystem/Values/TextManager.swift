@@ -12,6 +12,9 @@ struct TextManager {
     // MARK: - Main
     
     static let title = "하루 공유"
+    static let myTodayTitle = "나의 오늘"
+    static let myYesterdayTitle = "나의 어제"
+    static let othersYesterdayTitle = "누군가의 어제"
     
     // MARK: - Login
     
