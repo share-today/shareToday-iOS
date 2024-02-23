@@ -108,7 +108,7 @@ enum Icon {
         case .menu:
             return UIImage(named: "menu")
         case .more_horizontal:
-            return UIImage(named: "more_horizontal")
+            return UIImage(named: "more-horizontal")
         case .rotate_cw:
             return UIImage(named: "rotate-cw")
         }
