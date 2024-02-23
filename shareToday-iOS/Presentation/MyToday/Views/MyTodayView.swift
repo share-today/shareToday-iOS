@@ -112,6 +112,8 @@ final class MyTodayView: BackgroundView {
     private func configure() {
         
         self.setConstraints()
+        
+        self.configureTextView()
     }
     
     private func setConstraints() {
@@ -143,5 +145,22 @@ final class MyTodayView: BackgroundView {
         self.sendStackView.snp.makeConstraints {
             $0.bottom.trailing.equalToSuperview().inset(Dimension.basePadding)
         }
+    }
+}
+
+// MARK: - TextView
+
+extension MyTodayView {
+    
+    private func configureTextView() {
+        self.inputTextView.rx.text
+            .orEmpty
+            .subscribe(onNext: { [weak self] text in
+                let maxLength = 100
+                let updatedText = String(text.prefix(maxLength))
+                self?.countLabel.text = "\(updatedText.count)/\(maxLength)"
+                self?.inputTextView.text = (text.count > maxLength) ? String(text.prefix(maxLength)) : text
+            })
+            .disposed(by: disposeBag)
     }
 }
