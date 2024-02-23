@@ -17,7 +17,6 @@
 		1CDD02BE2B34491000502C04 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02BD2B34491000502C04 /* Colors.swift */; };
 		1CDD02C02B344D7200502C04 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02BF2B344D7200502C04 /* Icon.swift */; };
 		1CDD02C82B34641500502C04 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDD02C72B34641500502C04 /* SnapKit */; };
-		1CDD02CA2B34641500502C04 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDD02C92B34641500502C04 /* SnapKit-Dynamic */; };
 		1CDD02CF2B34710F00502C04 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02CE2B34710F00502C04 /* BackgroundView.swift */; };
 		1CDD02D12B34719E00502C04 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02D02B34719E00502C04 /* LoginView.swift */; };
 		1CDD02D32B34723500502C04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD02D22B34723500502C04 /* LoginViewController.swift */; };
@@ -66,7 +65,6 @@
 			files = (
 				1CDD02D92B34743A00502C04 /* Alamofire in Frameworks */,
 				1CDD02C82B34641500502C04 /* SnapKit in Frameworks */,
-				1CDD02CA2B34641500502C04 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +246,6 @@
 			name = "shareToday-iOS";
 			packageProductDependencies = (
 				1CDD02C72B34641500502C04 /* SnapKit */,
-				1CDD02C92B34641500502C04 /* SnapKit-Dynamic */,
 				1CDD02D82B34743A00502C04 /* Alamofire */,
 			);
 			productName = "shareToday-iOS";
@@ -476,7 +473,7 @@
 				INFOPLIST_FILE = "shareToday-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,7 +501,7 @@
 				INFOPLIST_FILE = "shareToday-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -567,11 +564,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1CDD02C62B34641500502C04 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		1CDD02C92B34641500502C04 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1CDD02C62B34641500502C04 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		1CDD02D82B34743A00502C04 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
