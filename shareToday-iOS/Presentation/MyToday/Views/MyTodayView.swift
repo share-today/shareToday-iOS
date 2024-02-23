@@ -89,10 +89,8 @@ final class MyTodayView: BackgroundView {
     private lazy var sendStackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [sendLabel,
                                                   sendButton])
-        view.spacing = 10
+        view.spacing = 7
         view.axis = .horizontal
-        view.distribution = .fill
-        view.alignment = .fill
         return view
     }()
     
