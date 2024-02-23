@@ -82,6 +82,7 @@ final class MyTodayView: BackgroundView {
         let button = UIButton()
         let image = Icon.arrow_right_gray.image
         button.setImage(image, for: .normal)
+        button.isEnabled = false
         return button
     }()
     
