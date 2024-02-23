@@ -10,6 +10,12 @@ import SnapKit
 
 final class LoginView: BackgroundView {
     
+    // MARK: - Properties
+    
+    var didTapKakaoButtonAction: (() -> Void)?
+    var didTapAppleButtonAction: (() -> Void)?
+    var didTapGoogleButtonAction: (() -> Void)?
+    
     // MARK: - Dimension
     
     enum Dimension {
@@ -74,7 +80,7 @@ final class LoginView: BackgroundView {
         button.clipsToBounds = true
         return button
     }()
-
+    
     private lazy var buttonStackView: UIStackView = {
         let stview = UIStackView(arrangedSubviews: [kakaoLoginButton,
                                                     appleLoginButton,
@@ -91,7 +97,7 @@ final class LoginView: BackgroundView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setConstraints()
+        self.configure()
     }
     
     required init?(coder: NSCoder) {
@@ -99,6 +105,11 @@ final class LoginView: BackgroundView {
     }
     
     // MARK: - Configure
+    
+    private func configure() {
+        
+        self.setConstraints()
+    }
     
     private func setConstraints() {
         self.addSubview(self.titleImage)
