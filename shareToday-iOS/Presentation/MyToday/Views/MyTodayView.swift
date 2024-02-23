@@ -25,7 +25,7 @@ final class MyTodayView: BackgroundView {
     }
     
     // MARK: - UI
-
+    
     private let myTodayView: UIView = {
         let view = UIView()
         view.backgroundColor = Colors.blue
@@ -155,10 +155,25 @@ extension MyTodayView {
         self.inputTextView.rx.text
             .orEmpty
             .subscribe(onNext: { [weak self] text in
+                
                 let maxLength = 100
                 let updatedText = String(text.prefix(maxLength))
                 self?.countLabel.text = "\(updatedText.count)/\(maxLength)"
                 self?.inputTextView.text = (text.count > maxLength) ? String(text.prefix(maxLength)) : text
+                
+                if text.count >= 10 {
+                    let image = Icon.arrow_right_black.image
+                    self?.sendButton.setImage(image, for: .normal)
+                    self?.sendButton.isEnabled = true
+                    
+                    self?.sendLabel.textColor = Colors.black
+                } else {
+                    let image = Icon.arrow_right_gray.image
+                    self?.sendButton.setImage(image, for: .normal)
+                    self?.sendButton.isEnabled = false
+                    
+                    self?.sendLabel.textColor = Colors.darkGray
+                }
             })
             .disposed(by: disposeBag)
     }
