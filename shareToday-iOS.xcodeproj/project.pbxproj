@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C3C1A602B894A7C00EB5264 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1C3C1A5F2B894A7C00EB5264 /* RxCocoa */; };
+		1C3C1A632B894C2F00EB5264 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C1A622B894C2F00EB5264 /* TextView.swift */; };
 		1C49CA9D2B89310900556262 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49CA9C2B89310900556262 /* MainView.swift */; };
 		1C49CAA02B89409700556262 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49CA9F2B89409700556262 /* MainViewController.swift */; };
 		1C5E836D2B40659C00CD2168 /* AuthEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E836C2B40659C00CD2168 /* AuthEntity.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C3C1A622B894C2F00EB5264 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		1C49CA9C2B89310900556262 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1C49CA9F2B89409700556262 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1C5E836C2B40659C00CD2168 /* AuthEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntity.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C3C1A612B894C2200EB5264 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1C3C1A622B894C2F00EB5264 /* TextView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1C49CA9B2B8930DE00556262 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		1CDD029C2B34238300502C04 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				1C3C1A612B894C2200EB5264 /* Components */,
 				1CDD02CD2B3470F600502C04 /* Views */,
 				1CDD029D2B3423C400502C04 /* Font */,
 				1CDD02AA2B3428BF00502C04 /* Values */,
@@ -359,6 +370,7 @@
 				1CDD02CF2B34710F00502C04 /* BackgroundView.swift in Sources */,
 				1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */,
 				1CDD02B42B342C7D00502C04 /* TextManager.swift in Sources */,
+				1C3C1A632B894C2F00EB5264 /* TextView.swift in Sources */,
 				1CDD02BE2B34491000502C04 /* Colors.swift in Sources */,
 				1CDD02B22B342BBC00502C04 /* BackgroundColor.swift in Sources */,
 				1CDD02B02B342A4100502C04 /* Typography.swift in Sources */,
