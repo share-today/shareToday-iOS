@@ -69,8 +69,7 @@ class MainView: BackgroundView {
     }()
     
     private var viewControllers: [UIViewController] {
-        // 임시로 LoginViewController로 연결
-        [LoginViewController(),
+        [MyTodayViewController(),
          LoginViewController(),
          LoginViewController()]
     }
