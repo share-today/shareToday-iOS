@@ -6,8 +6,23 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class MyTodayView: BackgroundView {
+    
+    // MARK: - Properties
+    
+    private var disposeBag = DisposeBag()
+    
+    // MARK: - Dimension
+    
+    enum Dimension {
+        static let topMargin: CGFloat = 10
+        static let basePadding: CGFloat = 24
+        static let viewHeight: CGFloat = 327
+        static let textViewMargin: CGFloat = 70
+    }
     
     // MARK: - UI
 
@@ -79,4 +94,54 @@ final class MyTodayView: BackgroundView {
         view.alignment = .fill
         return view
     }()
+    
+    // MARK: - Initialize
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Configure
+    
+    private func configure() {
+        
+        self.setConstraints()
+    }
+    
+    private func setConstraints() {
+        self.addSubview(self.myTodayView)
+        self.myTodayView.addSubview(self.todayLabel)
+        self.myTodayView.addSubview(self.inputTextView)
+        self.myTodayView.addSubview(self.countLabel)
+        self.myTodayView.addSubview(self.sendStackView)
+        
+        self.myTodayView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(Dimension.topMargin)
+            $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
+            $0.height.equalTo(Dimension.viewHeight)
+        }
+        
+        self.todayLabel.snp.makeConstraints {
+            $0.top.leading.equalToSuperview().inset(Dimension.basePadding)
+        }
+        
+        self.inputTextView.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview().inset(Dimension.textViewMargin)
+            $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
+        }
+        
+        self.countLabel.snp.makeConstraints {
+            $0.bottom.leading.equalToSuperview().inset(Dimension.basePadding)
+        }
+        
+        self.sendStackView.snp.makeConstraints {
+            $0.bottom.trailing.equalToSuperview().inset(Dimension.basePadding)
+        }
+    }
 }
