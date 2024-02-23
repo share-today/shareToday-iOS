@@ -48,7 +48,12 @@ final class LoginViewController: UIViewController {
         
         self.loginView.didTapAppleButtonAction = {
             // MARK: - TODO: Apple Login
-
+            
+            let nextVC = MainViewController()
+            nextVC.modalPresentationStyle = .fullScreen
+            let nav = UINavigationController(rootViewController: nextVC)
+            nav.modalPresentationStyle = .overFullScreen
+            self.present(nav, animated: false, completion: nil)
         }
         
         self.loginView.didTapGoogleButtonAction = {
