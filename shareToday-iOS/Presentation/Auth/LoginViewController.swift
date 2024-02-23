@@ -20,4 +20,39 @@ final class LoginViewController: UIViewController {
         
         self.view = loginView
     }
+    
+    // MARK: - Initialize
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nil, bundle: nil)
+        
+        self.configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Configure
+    
+    private func configure() {
+        
+        self.addConfigure()
+    }
+    
+    private func addConfigure() {
+        
+        self.loginView.didTapKakaoButtonAction = {
+            // MARK: - TODO: Kakao Login
+        }
+        
+        self.loginView.didTapAppleButtonAction = {
+            // MARK: - TODO: Apple Login
+
+        }
+        
+        self.loginView.didTapGoogleButtonAction = {
+            // MARK: - TODO: Google Login
+        }
+    }
 }
