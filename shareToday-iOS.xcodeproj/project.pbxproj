@@ -92,6 +92,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1C49CAA12B89428A00556262 /* MyToday */ = {
+			isa = PBXGroup;
+			children = (
+				1C49CAA22B89429F00556262 /* Views */,
+			);
+			path = MyToday;
+			sourceTree = "<group>";
+		};
+		1C49CAA22B89429F00556262 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1C5E836A2B40644600CD2168 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +167,7 @@
 			children = (
 				1CDD02B72B342E2700502C04 /* Auth */,
 				1C49CA9B2B8930DE00556262 /* Main */,
+				1C49CAA12B89428A00556262 /* MyToday */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
