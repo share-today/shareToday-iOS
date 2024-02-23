@@ -108,7 +108,23 @@ final class LoginView: BackgroundView {
     
     private func configure() {
         
+        self.addConfigure()
         self.setConstraints()
+    }
+    
+    private func addConfigure() {
+        
+        self.kakaoLoginButton.addAction(UIAction(handler: { [weak self] _ in
+            self?.didTapKakaoButtonAction?()
+        }), for: .touchUpInside)
+        
+        self.appleLoginButton.addAction(UIAction(handler: { [weak self] _ in
+            self?.didTapAppleButtonAction?()
+        }), for: .touchUpInside)
+        
+        self.googleLoginButton.addAction(UIAction(handler: { [weak self] _ in
+            self?.didTapGoogleButtonAction?()
+        }), for: .touchUpInside)
     }
     
     private func setConstraints() {
