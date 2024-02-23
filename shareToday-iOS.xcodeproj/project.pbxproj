@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C49CA9D2B89310900556262 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49CA9C2B89310900556262 /* MainView.swift */; };
+		1C49CAA02B89409700556262 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49CA9F2B89409700556262 /* MainViewController.swift */; };
 		1C5E836D2B40659C00CD2168 /* AuthEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E836C2B40659C00CD2168 /* AuthEntity.swift */; };
 		1C5E83702B41B55200CD2168 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E836F2B41B55200CD2168 /* AuthRepository.swift */; };
 		1CDD02AD2B3429A700502C04 /* Cafe24Ssurround.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C49CA9C2B89310900556262 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1C49CA9F2B89409700556262 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1C5E836C2B40659C00CD2168 /* AuthEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntity.swift; sourceTree = "<group>"; };
 		1C5E836F2B41B55200CD2168 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		1CDD02AB2B3429A700502C04 /* Cafe24Ssurround.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24Ssurround.ttf; sourceTree = "<group>"; };
@@ -71,6 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C49CA9B2B8930DE00556262 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1C49CA9F2B89409700556262 /* MainViewController.swift */,
+				1C49CA9E2B89407000556262 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1C49CA9E2B89407000556262 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C49CA9C2B89310900556262 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1C5E836A2B40644600CD2168 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1CDD02B72B342E2700502C04 /* Auth */,
+				1C49CA9B2B8930DE00556262 /* Main */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -309,9 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDD02DD2B3474A900502C04 /* API.swift in Sources */,
+				1C49CA9D2B89310900556262 /* MainView.swift in Sources */,
 				1CDD02E42B348A2300502C04 /* APINetworkManager.swift in Sources */,
 				1CDD02DF2B3475AA00502C04 /* APIRouter.swift in Sources */,
 				1CDD02E22B3477AA00502C04 /* Encodable.swift in Sources */,
+				1C49CAA02B89409700556262 /* MainViewController.swift in Sources */,
 				1CDD02CF2B34710F00502C04 /* BackgroundView.swift in Sources */,
 				1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */,
 				1CDD02B42B342C7D00502C04 /* TextManager.swift in Sources */,
