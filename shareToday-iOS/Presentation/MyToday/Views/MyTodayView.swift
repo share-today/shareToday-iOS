@@ -94,6 +94,25 @@ final class MyTodayView: BackgroundView {
         return view
     }()
     
+    // MARK: - 보내기 후 UI
+
+    private let contentLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = Colors.black
+        label.font = Typography.body2
+        label.numberOfLines = 0
+        label.isHidden = true
+        return label
+    }()
+    
+    private let moreButton: UIButton = {
+        let button = UIButton()
+        let image = Icon.more_horizontal.image
+        button.setImage(image, for: .normal)
+        button.isHidden = true
+        return button
+    }()
+    
     // MARK: - Initialize
     
     override init(frame: CGRect) {
@@ -122,6 +141,9 @@ final class MyTodayView: BackgroundView {
         self.myTodayView.addSubview(self.countLabel)
         self.myTodayView.addSubview(self.sendStackView)
         
+        self.myTodayView.addSubview(self.contentLabel)
+        self.myTodayView.addSubview(self.moreButton)
+        
         self.myTodayView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(Dimension.topMargin)
             $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
@@ -142,6 +164,15 @@ final class MyTodayView: BackgroundView {
         }
         
         self.sendStackView.snp.makeConstraints {
+            $0.bottom.trailing.equalToSuperview().inset(Dimension.basePadding)
+        }
+        
+        self.contentLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(Dimension.textViewMargin)
+            $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
+        }
+        
+        self.moreButton.snp.makeConstraints {
             $0.bottom.trailing.equalToSuperview().inset(Dimension.basePadding)
         }
     }
