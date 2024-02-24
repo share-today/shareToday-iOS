@@ -83,6 +83,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C157C262B8986CB00A40513 /* MyYesterday */ = {
+			isa = PBXGroup;
+			children = (
+				1C157C272B8986E800A40513 /* Views */,
+				1C157C2A2B89874D00A40513 /* Cells */,
+			);
+			path = MyYesterday;
+			sourceTree = "<group>";
+		};
+		1C157C272B8986E800A40513 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C157C2A2B89874D00A40513 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		1C3C1A612B894C2200EB5264 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +210,7 @@
 				1CDD02B72B342E2700502C04 /* Auth */,
 				1C49CA9B2B8930DE00556262 /* Main */,
 				1C49CAA12B89428A00556262 /* MyToday */,
+				1C157C262B8986CB00A40513 /* MyYesterday */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
