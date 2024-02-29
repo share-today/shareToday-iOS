@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C157C252B89543600A40513 /* MyTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C157C242B89543600A40513 /* MyTodayViewController.swift */; };
+		1C157C2C2B8987FB00A40513 /* MyYesterdayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C157C2B2B8987FB00A40513 /* MyYesterdayCollectionViewCell.swift */; };
 		1C3C1A602B894A7C00EB5264 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1C3C1A5F2B894A7C00EB5264 /* RxCocoa */; };
 		1C3C1A632B894C2F00EB5264 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C1A622B894C2F00EB5264 /* TextView.swift */; };
 		1C3C1A652B89514700EB5264 /* MyTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C1A642B89514700EB5264 /* MyTodayView.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		1C157C242B89543600A40513 /* MyTodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodayViewController.swift; sourceTree = "<group>"; };
+		1C157C2B2B8987FB00A40513 /* MyYesterdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyYesterdayCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C3C1A622B894C2F00EB5264 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		1C3C1A642B89514700EB5264 /* MyTodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodayView.swift; sourceTree = "<group>"; };
 		1C49CA9C2B89310900556262 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		1C157C2A2B89874D00A40513 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1C157C2B2B8987FB00A40513 /* MyYesterdayCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				1CDD02CF2B34710F00502C04 /* BackgroundView.swift in Sources */,
 				1CEA337C2B335D440080EEEF /* AppDelegate.swift in Sources */,
 				1CDD02B42B342C7D00502C04 /* TextManager.swift in Sources */,
+				1C157C2C2B8987FB00A40513 /* MyYesterdayCollectionViewCell.swift in Sources */,
 				1C3C1A632B894C2F00EB5264 /* TextView.swift in Sources */,
 				1CDD02BE2B34491000502C04 /* Colors.swift in Sources */,
 				1CDD02B22B342BBC00502C04 /* BackgroundColor.swift in Sources */,
