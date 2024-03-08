@@ -12,10 +12,7 @@ final class MyYesterdayCommentCollectionViewCell: UICollectionViewCell {
     // MARK: - Dimension
     
     enum Dimension {
-        static let topMargin: CGFloat = 10
         static let basePadding: CGFloat = 24
-        static let viewHeight: CGFloat = 327
-        static let contentMargin: CGFloat = 50
     }
     
     // MARK: - UI
@@ -77,8 +74,8 @@ final class MyYesterdayCommentCollectionViewCell: UICollectionViewCell {
         self.addSubview(self.buttonStackView)
         
         self.commentLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(10)
-            $0.leading.trailing.equalToSuperview().inset(10)
+            $0.top.equalToSuperview().offset(Dimension.basePadding)
+            $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
         }
         
         self.buttonStackView.snp.makeConstraints {
