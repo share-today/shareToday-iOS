@@ -69,6 +69,15 @@ final class MyYesterdayView: UIView {
         return view
     }()
     
+    private let emptyStateLabel: UILabel = {
+        let label = UILabel()
+        label.text = TextManager.myYesterday_emptyState
+        label.textColor = Colors.black
+        label.font = Typography.body2
+        label.isHidden = true
+        return label
+    }()
+    
     // MARK: - Initialize
     
     override init(frame: CGRect) {
@@ -94,6 +103,7 @@ final class MyYesterdayView: UIView {
         self.myYesterdayView.addSubview(self.contentLabel)
         self.myYesterdayView.addSubview(self.moreButton)
         self.addSubview(self.commentCollectionView)
+        self.addSubview(self.emptyStateLabel)
         
         self.myYesterdayView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(Dimension.topMargin)
@@ -118,6 +128,10 @@ final class MyYesterdayView: UIView {
             $0.top.equalTo(self.myYesterdayView.snp.bottom).offset(Dimension.collectionViewTopSpacing)
             $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
             $0.height.equalTo(Dimension.collectionViewHeight)
+        }
+        
+        self.emptyStateLabel.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
         }
     }
 }
