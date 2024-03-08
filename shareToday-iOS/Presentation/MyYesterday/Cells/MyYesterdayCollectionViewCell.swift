@@ -20,7 +20,7 @@ final class MyYesterdayCommentCollectionViewCell: UICollectionViewCell {
     private let commentLabel: UILabel = {
         let label = UILabel()
         label.textColor = Colors.black
-        label.font = Typography.preText
+        label.font = Typography.smallText
         label.numberOfLines = 0
         return label
     }()
