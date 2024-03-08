@@ -38,6 +38,7 @@
 		1CEA337E2B335D440080EEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA337D2B335D440080EEEF /* SceneDelegate.swift */; };
 		1CEA33852B335D450080EEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEA33842B335D450080EEEF /* Assets.xcassets */; };
 		1CEA33882B335D450080EEEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CEA33862B335D450080EEEF /* LaunchScreen.storyboard */; };
+		1CF46D132B9AC51700C1130A /* MyYesterdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF46D122B9AC51700C1130A /* MyYesterdayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		1CEA33842B335D450080EEEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CEA33872B335D450080EEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CEA33892B335D450080EEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF46D122B9AC51700C1130A /* MyYesterdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyYesterdayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		1C157C262B8986CB00A40513 /* MyYesterday */ = {
 			isa = PBXGroup;
 			children = (
+				1CF46D122B9AC51700C1130A /* MyYesterdayViewController.swift */,
 				1C157C272B8986E800A40513 /* Views */,
 				1C157C2A2B89874D00A40513 /* Cells */,
 			);
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDD02DD2B3474A900502C04 /* API.swift in Sources */,
+				1CF46D132B9AC51700C1130A /* MyYesterdayViewController.swift in Sources */,
 				1C49CA9D2B89310900556262 /* MainView.swift in Sources */,
 				1CDD02E42B348A2300502C04 /* APINetworkManager.swift in Sources */,
 				1CDD02DF2B3475AA00502C04 /* APIRouter.swift in Sources */,
