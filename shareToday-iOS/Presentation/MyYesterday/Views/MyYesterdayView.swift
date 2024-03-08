@@ -146,3 +146,18 @@ extension MyYesterdayView: UICollectionViewDelegate, UICollectionViewDataSource 
         return cell
     }
 }
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension MyYesterdayView: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
+        
+        let cellWidth = collectionView.frame.width
+        return CGSize(width: cellWidth, height: 132)
+    }
+}
