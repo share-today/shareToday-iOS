@@ -62,6 +62,8 @@ final class MyYesterdayView: UIView {
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.showsHorizontalScrollIndicator = false
         
+        view.delegate = self
+        view.dataSource = self
         view.register(MyYesterdayCommentCollectionViewCell.self,
                       forCellWithReuseIdentifier: "MyYesterdayCommentCollectionViewCell")
         return view
@@ -117,5 +119,30 @@ final class MyYesterdayView: UIView {
             $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
             $0.height.equalTo(Dimension.collectionViewHeight)
         }
+    }
+}
+
+// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
+
+extension MyYesterdayView: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        numberOfItemsInSection section: Int
+    ) -> Int {
+        return 1
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "MyYesterdayCommentCollectionViewCell",
+            for: indexPath
+        ) as! MyYesterdayCommentCollectionViewCell
+        
+        return cell
     }
 }
