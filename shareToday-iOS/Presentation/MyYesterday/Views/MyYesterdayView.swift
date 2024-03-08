@@ -9,6 +9,17 @@ import UIKit
 
 final class MyYesterdayView: UIView {
     
+    // MARK: - Dimension
+    
+    enum Dimension {
+        static let topMargin: CGFloat = 10
+        static let basePadding: CGFloat = 24
+        static let viewHeight: CGFloat = 327
+        static let contentMargin: CGFloat = 50
+        static let collectionViewTopSpacing: CGFloat = 10
+        static let collectionViewHeight: CGFloat = 132
+    }
+    
     // MARK: - UI
     
     private let myYesterdayView: UIView = {
@@ -55,4 +66,56 @@ final class MyYesterdayView: UIView {
                       forCellWithReuseIdentifier: "MyYesterdayCommentCollectionViewCell")
         return view
     }()
+    
+    // MARK: - Initialize
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Configure
+    
+    private func configure() {
+        
+        self.setConstraints()
+    }
+    
+    private func setConstraints() {
+        self.addSubview(self.myYesterdayView)
+        self.myYesterdayView.addSubview(self.dateLabel)
+        self.myYesterdayView.addSubview(self.contentLabel)
+        self.myYesterdayView.addSubview(self.moreButton)
+        self.addSubview(self.commentCollectionView)
+        
+        self.myYesterdayView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(Dimension.topMargin)
+            $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
+            $0.height.equalTo(Dimension.viewHeight)
+        }
+        
+        self.dateLabel.snp.makeConstraints {
+            $0.top.leading.equalToSuperview().inset(Dimension.basePadding)
+        }
+        
+        self.contentLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(Dimension.contentMargin)
+            $0.left.trailing.equalToSuperview().inset(Dimension.basePadding)
+        }
+        
+        self.moreButton.snp.makeConstraints {
+            $0.bottom.trailing.equalToSuperview().inset(Dimension.basePadding)
+        }
+        
+        self.commentCollectionView.snp.makeConstraints {
+            $0.top.equalTo(self.myYesterdayView.snp.bottom).offset(Dimension.collectionViewTopSpacing)
+            $0.leading.trailing.equalToSuperview().inset(Dimension.basePadding)
+            $0.height.equalTo(Dimension.collectionViewHeight)
+        }
+    }
 }
