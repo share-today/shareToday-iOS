@@ -28,4 +28,8 @@ struct TextManager {
     static let myToday_placeholder = "누군가에게 털어놓고 싶은 일이\n있었나요?"
     static let myToday_contentCount = "0/100"
     static let myToday_send = "보내기"
+    
+    // MARK: - MyYesterday
+    
+    static let myYesterday_emptyState = "어제는 이야기를 들려주지 않았어요."
 }
