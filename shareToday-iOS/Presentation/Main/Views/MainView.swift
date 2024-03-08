@@ -70,7 +70,7 @@ class MainView: BackgroundView {
     
     private var viewControllers: [UIViewController] {
         [MyTodayViewController(),
-         LoginViewController(),
+         MyYesterdayViewController(),
          LoginViewController()]
     }
     
